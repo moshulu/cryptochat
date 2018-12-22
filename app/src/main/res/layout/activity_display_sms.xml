@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+
+        android:id="@+id/textView1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#000000"
+
+        android:text="Sender:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textColor="#ffff" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical" >
+
+        <TextView
+
+            android:id="@+id/senderNum"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:background="#b6b6b6"
+
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#000000"
+
+        android:text="Received Encrypted Message:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textColor="#ffff" />
+
+    <TextView
+
+        android:id="@+id/encryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:background="#b6b6b6"
+
+        android:layout_height="130dp" />
+
+    <TextView
+
+        android:id="@+id/textView4"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#000000"
+
+        android:textColor="#ffff"
+
+        android:text="Decrypted Message:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        />
+
+    <TextView
+
+        android:id="@+id/decryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:background="#b6b6b6"
+
+
+        android:layout_height="68dp"
+
+        android:layout_weight="0.05" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" >
+
+        <Button
+
+            android:id="@+id/cancel"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Exit"
+
+            android:textColor="#df2323"
+
+            android:background="#313131"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

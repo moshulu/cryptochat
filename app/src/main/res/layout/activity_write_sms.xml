@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+
+        android:id="@+id/sendBtn"
+
+        android:layout_width="150dp"
+
+        android:layout_height="50dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.07"
+        android:background="#313131"
+        android:text="Send"
+
+        android:textColor="#df2323"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgContent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+
+        android:background="#000000"
+
+        android:text="Recipient:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+
+        android:id="@+id/msgContent"
+
+        style="@style/Widget.AppCompat.EditText"
+
+        android:layout_width="367dp"
+
+        android:layout_height="171dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="8dp"
+        android:background="#b6b6b6"
+        android:inputType="textMultiLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recNum"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+
+        android:id="@+id/recNum"
+
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:background="#b6b6b6"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+    </EditText>
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Message:"
+
+        android:textColor="#ffffff"
+
+        android:background="#000000"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/msgContent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+
+        android:id="@+id/cancelBtn"
+
+        android:layout_width="150dp"
+
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_weight="3.48"
+        android:background="#313131"
+        android:text="Cancel"
+
+        android:textColor="#df2323"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgContent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
+
